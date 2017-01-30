@@ -1,0 +1,5 @@
+esmakordselt:
+a) seadista - määra kasutajanimi, email, editor - git config käsuga
+b) loo kataloog, kus hakkad skriptima - mkdir skriptimine
+c) sisene antud kataloogi - cd skriptimine
+d) tekita lokaalne repositoorium git süsteemi jaoks antud kaustas - git init käsuga
