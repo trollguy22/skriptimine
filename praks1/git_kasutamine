@@ -8,3 +8,11 @@ a) git remote add nimi aadress
 git remote add github https://github.com/trollguy22/repo_nimi
 2) kontrolli git remote
 git remote -v
+põhikasutamine:
+a) pane fail jälgimisele: git add failinimi
+b) lisa muudatuse kirjeldus (lühike) 
+	git commit -m "kirjelduse lühike lause" 
+voi
+	git commit -a	-sel juhul editoriga kirjuta lühikirjeldus
+c) git push remote_nimi versioonide_halduse_üksuse nimi
+	git push -uf github master
