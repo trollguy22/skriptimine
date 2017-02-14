@@ -2,3 +2,7 @@
 #
 # keskkonna ja oma muutujate kasutamine
 #
+# kasutame kaskkonna muutuja nimega $USER
+# ja tervitame kasutajat
+echo "Tere, $USER!"
+
