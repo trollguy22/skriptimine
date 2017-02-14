@@ -15,3 +15,7 @@ echo "Täna on $kuupaev"
 kell=`date +%H:%M`
 # väljastame kell koos seletusega
 echo "Kell on $kell"
+echo "=================="
+kalender=`cal`
+echo "$kalender"
+echo "=================="
