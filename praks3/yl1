@@ -5,4 +5,8 @@
 # kasutame kaskkonna muutuja nimega $USER
 # ja tervitame kasutajat
 echo "Tere, $USER!"
-
+# kuupäeva väärtuse loomine
+# defineerime vastava väärtusega muutuja
+kuupaev=`date +'%d. %B'`
+# valjastame kuupaev koos selgitava teksiga
+echo "Täna on $kuupaev"
