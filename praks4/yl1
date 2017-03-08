@@ -5,12 +5,14 @@ echo -n "sisesta arv: "
 read arv
 # nüüd kontrollib, kas arv on positiivne
 # sel juhul arv peab olema suurem kui 0
-if [ $arv -gt 0 ]
-then
+if [ $arv -gt 0 ]; then
 	# jah, arv on suurem kui 0 - positiivne
 	echo "$arv on positiivne"
-# kui ei ole suurem kui 0 - negatiivne
-else
+# kui arv on väiksem kui kui 0 - negatiivne
+elif [ $arv -lt 0 ]; then
 	echo "$arv on negatiivne"
+# kui esimene või teine tingimus ei sobi - neutraalne
+else
+	echo "$arv on neutraalne"
 # if lause tuleb korralikult lõpetada
 fi
