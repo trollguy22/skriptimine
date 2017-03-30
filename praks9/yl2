@@ -1,0 +1,9 @@
+#!/bin/bash
+for (( i = 1; i <= 5; i++ )) #5 rida#
+do
+	for (( j = 1 ; j <= 3; j++ )) #3 tärni reas
+	do
+	echo -n "* "
+done
+echo ""
+done
