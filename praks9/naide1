@@ -1,0 +1,9 @@
+#!/bin/bash
+for (( i = 1; i <= 5; i++ ))	#väline#
+do
+	for (( j = 1 ; j <= 5; j++ )) #sisemine#
+	do
+	echo -n "$i "
+done
+echo "" #uus rida#
+done
