@@ -5,13 +5,22 @@
 # tekitame read
 for((r=1; r<5; r++))
 do
-	# kontrollime kui r on 1
-	if [ $r -eq 1 ]; then
+	# kontrollime kui r on 1 või (-o) on 4
+	if [ $r -eq 1 -o $r -eq 4 ]; then
 # teeme tärnid
 	for((v=1; v<6; v++))
 	do
 	echo -n "* "
 	done
+# vahepealsed
+else
+	#tärn
+	echo -n "* "
+# täpid
+	for((v=2; v<5; v++))
+do echo -n "  "
+done
+echo -n "* "
 fi
 #reavahetus
 echo
