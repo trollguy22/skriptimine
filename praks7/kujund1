@@ -1,0 +1,18 @@
+#!/bin/bash
+#
+# tärniruut
+#
+# tekitame read
+for((r=1; r<5; r++))
+do
+	# kontrollime kui r on 1
+	if [ $r -eq 1 ]; then
+# teeme tärnid
+	for((v=1; v<6; v++))
+	do
+	echo -n "* "
+	done
+fi
+#reavahetus
+echo
+done
