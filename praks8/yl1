@@ -1,16 +1,23 @@
 #!/bin/bash
 # ip järgi arvuti kontrollimine
-for ip in 172.23.13.{20..50}
+echo -n "sisesta vahemiku algus: "
+read algus
+echo -n "sisesta vahemiku lõpp: "
+read lopp
+echo -n > ping_tulemus
+for((nr=$algus; nr<=$lopp; nr++))
 do
-	# teatamen antud ip pingi
+	# paneme ip kokku
+ip=172.23.13.$nr
+# teata,e antud ip pingu
 ping -c 1 $ip > /dev/null # väljund kustutatud
 # kontroll
 if [ $? -eq 0 ]; then
 # kui $? on 0 - kõik korras
-echo "$ip - ok"
+echo "$ip - ok" >> ping_tulemus
 # muidu
 else
-echo "$ip -not"
+echo "$ip -not" >> ping_tulemus
 fi
 done
 
