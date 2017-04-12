@@ -1,0 +1,8 @@
+#!/bin/bash
+# ip järgi arvuti kontrollimine
+for nr in {20..50}
+do
+	ip=172.23.13.$nr
+echo $ip
+done
+
