@@ -1,8 +1,16 @@
 #!/bin/bash
 # ip järgi arvuti kontrollimine
-for nr in {20..50}
+for ip in 172.23.13.{20..50}
 do
-	ip=172.23.13.$nr
-echo $ip
+	# teatamen antud ip pingi
+ping -c 1 $ip > /dev/null # väljund kustutatud
+# kontroll
+if [ $? -eq 0 ]; then
+# kui $? on 0 - kõik korras
+echo "$ip - ok"
+# muidu
+else
+echo "$ip -not"
+fi
 done
 
